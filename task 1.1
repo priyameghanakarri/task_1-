@@ -1,0 +1,56 @@
+#include<stdio.h>
+int main()
+{ int size,i=0,j=0;
+  char a[125];
+  scanf("%d",&size);
+  scanf("%s",a);
+  while(i<size)
+  {
+   if(a[i]=='1')
+   {
+     j++;
+   }
+        i++;
+   }
+    if(j==size||j==1)
+	printf("-1");
+	else
+	{
+	       binarysubtraction(a,size);
+		   printf("%s\t",a);
+		   binaryaddition(a,size);
+		   printf("%s",a);
+		   }
+    }
+	binaryaddition(char a[],int z)
+	{int i;
+	i=x-1;
+	  if(a[i]=='0')
+	  {
+	      a[i]='1'
+	  }
+	  else
+	  { 
+	       a[i]='0';
+		   x--;
+		   binaryadd(a,x);
+	   }
+	}
+	binarysubtraction(char a[],int x)
+	{
+	      int i;
+		  i=x-1;
+		  if(a[i]=='1')
+		  {
+		       a[i]='0';
+		   }
+		   else
+		   {
+		        a[i]='1';
+				x--;
+				binarysubtraction(a,x);
+	        }
+			
+	}
+	
+	

@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{char a[10000000];
+int k=0,n=0,size,x;
+scanf("%d",&size);
+x=size;
+while(x%2==0)
+{
+n++;
+x=x/2;
+}
+x=pow(2,n);
+if(x==1)
+{
+scanf("%s",a);
+printf("0"0;
+}
+else if(size==x)
+{
+scanf("%s",a);
+sym(k,a,n);
+}
+else
+{
+printf("invalid input");
+}
+}
+sym(int k,char a[],int n)
+{
+int i,s,j=0,h;
+s=pow(2,n-1);
+for(i=0;i<s;i++)
+{
+h=pow(2,n-1)+i;
+ if(a[i]==a[h])
+ j++;
+}
+if(i==j)
+{
+  if(i!=1)
+  {
+   k++;
+   sym(k,a,n-1);
+}
+
+else
+{
+ k++;
+ printf("%d",k);
+ }
+ }
+ elseprintf("%d",k);
+}
+
